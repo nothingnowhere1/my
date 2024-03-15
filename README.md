@@ -11,6 +11,7 @@
 <img src= "Logo\logo-white.png" title = "Логотип - квадрат с надписью MY">
 
 ## Языки и инструментарий 
+<div>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="40" height = "40" title = "Логотип - HTML">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="40" height="40" title = "Логотип - CSS">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="40" height = "40"  title = "Логотип - React">
@@ -19,6 +20,7 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width ="40" height = "40" title = "Логотип - MongoDB">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" width="40" height = "40" title = "Логотип - SQL">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width = "40" height= "40" title = "Логотип - Typescript">
+</div>
 
 ## MVP 1 и описание функционала страницы
 **1. Главная страница** *(Яруллина Эльвина)*
