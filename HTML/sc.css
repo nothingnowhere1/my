@@ -43,14 +43,15 @@ body{
 
 .screen {
     position: relative;
-    height: 40vh; 
+    height: 45vh; 
+    width: 20%;
     background-color: rgba(255, 255, 255, 0.5);
-    background-image: url('pic2.jpg');
-    border: 10px solid grey;
+    border: 5px solid grey;
+    border-width: 30px 30px 50px;
     border-radius: 10px;
     margin: 100px;
-    top: -70px;
-}
+    top: -70px; 
+}               
 
 .container{
     display: flex;
@@ -70,9 +71,9 @@ body{
 
 .text {
         position: absolute;
-        top: 235px;
+        top: 304px;
         text-align: middle;
-        font-size: 14px;
+        font-size: 17px;
         color: black;
 }
 
