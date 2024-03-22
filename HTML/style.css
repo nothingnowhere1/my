@@ -1,0 +1,93 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+
+
+
+body{
+    margin: 0
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    }
+
+.half-screen {
+    position: relative;
+    height: 40vh; 
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('pic2.jpg');
+    border: 10px solid white;
+    top: 0px;
+}
+
+.screen {
+    position: relative;
+    height: 40vh; 
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('pic2.jpg');
+    border: 10px solid grey;
+    border-radius: 10px;
+    margin: 100px;
+    top: -70px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.text-overlay {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        text-align: left;
+        font-size: 10px;
+        color: white;
+}
+
+.text {
+        position: absolute;
+        top: 235px;
+        text-align: middle;
+        font-size: 14px;
+        color: black;
+}
+
+
+.large {
+        font-size: 30px;
+        font-family: "Verdana";
+        border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+.small {
+        font-size: 15px;
+        font-variant: small-caps;
+}
+
+
+
+
