@@ -33,12 +33,11 @@ body{
     }
 
 .half-screen {
-    position: relative;
-    height: 40vh; 
-    background-color: rgba(255, 255, 255, 0.5);
-    background-image: url('pic2.jpg');
+    height: 580px; 
+    background: url('images/pic2.png');
+    background-repeat:no-repeat;
+    background-position: center;
     border: 10px solid white;
-    top: 0px;
 }
 
 .screen {
@@ -47,34 +46,36 @@ body{
     width: 20%;
     background-color: rgba(255, 255, 255, 0.5);
     border: 5px solid grey;
-    border-width: 30px 30px 50px;
+    border-width: 20px 20px 70px;
     border-radius: 10px;
-    margin: 100px;
-    top: -70px; 
+    margin-left: 20px;
 }               
 
 .container{
     display: flex;
     flex-direction: row;
-
+    margin-top: 30px;
 }
 
+.photo{
+    width: 240px; 
+    height: 300px;
+    position: relative;
+}
 
 .text-overlay {
-        position: absolute;
-        top: 5px;
-        left: 10px;
-        text-align: left;
-        font-size: 10px;
-        color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 10px;
+    color: white;
 }
 
 .text {
-        position: absolute;
-        top: 304px;
-        text-align: middle;
-        font-size: 17px;
-        color: black;
+    position: relative;
+    text-align: middle;
+    font-size: 17px;
+    color: black;
 }
 
 
@@ -90,5 +91,63 @@ body{
 }
 
 
+
+header{
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    font-size: 1.125rem;
+    line-height: 29px;
+    letter-spacing: 1.3px;
+    padding: 0 1rem 45px;
+    transition: height .3s;
+    z-index: 6
+}
+.left-header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu{
+    fill: #fff;
+    stroke: #fff;
+    width: 51px;
+    height: 51px;
+    margin-left: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items:center ;
+}
+
+.right-header{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+ 
+.search{
+    position: relative;
+    fill: #fff;
+    stroke: #fff;
+    width: 51px;
+    height: 51px;
+}
+
+.cart{
+    position: relative;
+    margin-left: 33px;
+    margin-right: 20px;
+    fill: #fff;
+    stroke: #fff;
+    width: 51px;
+    height: 51px;
+}
 
 
