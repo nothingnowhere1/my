@@ -33,7 +33,7 @@ body{
     }
 
 .half-screen {
-    height: 830px; 
+    height: 710px; 
     background: url('images/pic_1x.jpg');
     background-size: 1500px;
     background-repeat:no-repeat;
@@ -78,7 +78,7 @@ body{
 
 .text-overlay {
     font-family: "Inter", sans-serif;
-    margin-top: 370px;
+    margin-top: 285px;
     margin-left: 30px;
     text-align: left;
     font-size: 10px;
@@ -95,7 +95,7 @@ body{
 
 .large {
         font-weight: 800;
-        font-size: 300px;
+        font-size: 270px;
         color: #ADFF00;
     }
 
