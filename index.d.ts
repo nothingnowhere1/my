@@ -1,4 +1,4 @@
 declare module '*.png' {
-  let path: string;
-  export default path;
-}
+    let path: string;
+    export default path;
+  }
