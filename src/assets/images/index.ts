@@ -1,1 +1,10 @@
-export { default as logo } from './logo.png';
+export { default as logo_1x } from './logo_1x.png';
+export { default as logo_2x } from './logo_2x.png';
+export { default as logo_4x } from './logo_4x.png';
+export { default as shirt1_1x } from './shirt1_1x.jpg';
+export { default as shirt1_2x } from './shirt1_2x.jpg';
+export { default as shirt1_3x } from './shirt1_3x.jpg';
+export { default as pic_1x } from './pic_1x.jpg';
+export { default as shirt10_1x } from './shirt10_1x.jpg';
+export { default as shirt10_2x } from './shirt10_2x.jpg';
+export { default as shirt10_3x } from './shirt10_3x.jpg';

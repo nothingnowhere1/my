@@ -2,13 +2,13 @@ import React from "react";
 
 import './styles_for_booking.css';
 
-import { logo } from '../assets/images'
+import { logo_1x, logo_2x } from '../assets/images'
 
 const Booking = () => {
   return (
     <>
       <header className="logo-container">
-        <img src={logo} alt="Логотип" className="logo" />
+        <img src={logo_1x} alt="Логотип" className="logo" />
       </header>
       <main>
         <section className="container">
