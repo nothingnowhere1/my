@@ -24,6 +24,7 @@ time, mark, audio, video {
     --text-color: #fff;
     --background-color: #000;
     --price-color: #0f0;
+    --line: gray;
 }
 
 body {
