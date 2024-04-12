@@ -42,6 +42,9 @@ table {
 	border-spacing: 0;
 }
 
+body{
+    font-family: "Inter", sans-serif;
+}
 header{
     position: relative;
     height: 100px;
@@ -127,6 +130,8 @@ p{
 }
 
 .product-title{
+    font-size: 30px;
+    font-family: "Jost", sans-serif;
     padding: 10px 0 20px;
     color:#fff;
 }
@@ -137,11 +142,21 @@ p{
 }
 
 .product-price{
+    font-size: 30px;
+    font-family: "Jost", sans-serif;;
     padding: 10px 0 20px;
     color:crimson;
 }
 
 button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+  }
+  
+  .color1{
     border: 4px inset white;
     padding: 20px;
     text-align: center;
@@ -150,13 +165,18 @@ button {
     font-size: 16px;
     margin: 4px 2px;
     border-radius: 50%;
-  }
-  
-  .color1{
     background-color: #fff;
   }
 
     .color2{
+    border: 4px inset white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
     background-color: #000;
   }
 
@@ -172,6 +192,7 @@ button {
     border-radius: 0%;
   }
   .buttontext{
+    font-size: 120%;
     color: #fff;
     font-weight: lighter;
   }
@@ -179,7 +200,7 @@ button {
     margin-top: 60px; 
     width: 50%;
     padding: 20px;
-    background-color: #ccc; 
+    background-color: #ADFF00; 
     color: #000; 
     border: none;
     border-radius: 15px;
@@ -207,32 +228,53 @@ details{
 
 .screen {
     position: relative;
-    height: 45vh; 
-    width: 20%;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 5px solid grey;
-    border-width: 20px 20px 70px;
-    border-radius: 10px;
-    margin-left: 20px;
+    height: 63vh; 
+    width: 22%;
+    background-color: #515356;
+    border: 5px solid #515356;
+    border-width: 50px 35px 80px 60px;
+    border-radius: 20px;
+    margin-left: 60px;
 }       
 
 .photo{
-    width: 240px; 
-    height: 300px;
+    width: 300px; 
+    height: 400px;
     position: relative;
+    border-radius: 20px;
 }
 
 
 .text {
+    font-family: "Inter", sans-serif;
     position: relative;
-    text-align: middle;
-    font-size: 17px;
-    color: black;
+    text-align: left;
+    font-size: 23px;
 }
 
 .nadpisi {
     margin-top: 20px;
-    margin-left: 50px;
-    color: red;
+    margin-left: 60px;
+    color: #ADFF00;
+    font-size: 30px;
+    font-family: "Jost", sans-serif;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 80px;
+    column-gap: 8em;
     font-size: 20px;
+    color: white;
+}
+.opis{
+    font-family: "Jost", sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.foot{
+    font-size: 16px;
 }

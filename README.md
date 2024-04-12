@@ -22,6 +22,20 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width = "40" height= "40" title = "Логотип - Typescript">
 </div>
 
+## Установка и запуск проекта
+
+### Устанавливаем зависимости
+
+```shell
+npm install
+```
+
+### Запуск
+
+```shell
+npm start
+```
+
 ## MVP 1 и описание функционала страницы
 **1. Главная страница** *(Яруллина Эльвина)*
   - Товары, их стоимость, названия
