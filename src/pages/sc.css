@@ -25,7 +25,7 @@ time, mark, audio, video {
     --secondary-color: #999;
     --text-color: #fff;
     --background-color: #000;
-    --price-color: #0f0;
+    --price-color: #ADFF00;
 }
 
 body{
@@ -172,13 +172,25 @@ header{
     height: 51px;
 }
 
-textitem{
-    color: 'white';
-    font-weight:'bold'
+.textitem{
+    color: white;
+    font-weight:bold
 }
 
-textprice{
-    font-weight:'bold';
-    color: '#ADFF00';
-    font-size: '28px'
+.textprice{
+    font-weight:bold;
+    color: #ADFF00;
+    font-size: 28px
+}
+
+.footer {
+    padding: 20px 0; 
+}
+
+.footer-column {
+    padding: 0 20px; 
+}
+
+.footer-contact {
+    margin-top: 100px;
 }
