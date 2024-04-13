@@ -2,27 +2,37 @@ import React from "react";
 
 import './styles_for_booking.css';
 
-import { logo } from '../assets/images'
+import { logo_1x } from '../assets/images'
+import { logo_2x } from '../assets/images'
+import { logo_4x } from '../assets/images'
+import { shirt1_1x } from '../assets/images'
+import { shirt1_2x } from '../assets/images'
+import { shirt1_4x } from '../assets/images'
+import { shirt6_1x } from '../assets/images'
+import { shirt6_2x } from '../assets/images'
+import { shirt6_4x } from '../assets/images'
 
 const Booking = () => {
   return (
     <>
       <header className="logo-container">
-        <img src={logo} alt="Логотип" className="logo" />
+        <img
+          src={logo_4x}
+          srcSet={`${logo_1x} 220w, ${logo_2x} 445w, ${logo_4x} 880w`}
+          alt="Логотип"
+          className="logo"
+          width={100}
+          height={100}
+        />
       </header>
       <main>
         <section className="container">
           <div className="items-column">
             <article className="item">
-              <img
-                src="images/shirt3.png"
-                alt="Товар 1"
-                className="item-image"
-              />
+              <img className="item-image" src={shirt6_4x}  srcSet={`${shirt6_1x} 220w, ${shirt6_2x} 445w, ${shirt6_4x} 880w`} alt="Товар 1"> </img>
               <div className="item-details">
                 <h2>
-                  ФУТБОЛКА ТРЕТЬЯКОВСКАЯ ГАЛЕРЕЯ АЙВАЗОВСКИЙ И. «ЧЕРНОЕ МОРЕ»
-                  «ЛУННАЯ НОЧЬ НА КАПРИ»
+                ФУТБОЛКА С ОРНАМЕНТОМ ПЕЙСЛИ
                 </h2>
                 <p>Размер: M/L</p>
                 <p>Цвет: Серый</p>
@@ -35,11 +45,7 @@ const Booking = () => {
               </div>
             </article>
             <article className="item">
-              <img
-                src="images/shirt8.png"
-                alt="Товар 2"
-                className="item-image"
-              />
+            <img className="item-image" src={shirt1_4x}  srcSet={`${shirt1_1x} 220w, ${shirt1_2x} 445w, ${shirt1_4x} 880w`} alt="Товар 2"> </img>
               <div className="item-details">
                 <h2>ФУТБОЛКА С ПРИНТОМ МОСФИЛЬМ</h2>
                 <p>Размер: M/L</p>
