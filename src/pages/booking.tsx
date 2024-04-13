@@ -27,9 +27,9 @@ const Booking = () => {
       </header>
       <main>
         <section className="container">
-          <div className="items-column">
+        <div className="items-column">
             <article className="item">
-              <img className="item-image" src={shirt6_4x}  srcSet={`${shirt6_1x} 220w, ${shirt6_2x} 445w, ${shirt6_4x} 880w`} alt="Товар 1"> </img>
+              <img className="item-image" src={shirt6_4x}  srcSet={`${shirt6_1x} 220w, ${shirt6_2x} 445w, ${shirt6_4x} 880w`} alt="Товар 1"/>
               <div className="item-details">
                 <h2>
                 ФУТБОЛКА С ОРНАМЕНТОМ ПЕЙСЛИ
@@ -38,21 +38,21 @@ const Booking = () => {
                 <p>Цвет: Серый</p>
                 <p className="price">1500 р</p>
                 <div className="quantity-controls">
-                  <button className="quantity-control minus">-</button>
+                  <button className="quantity-control minus">–</button>
                   <span className="quantity">2</span>
                   <button className="quantity-control plus">+</button>
                 </div>
               </div>
             </article>
             <article className="item">
-            <img className="item-image" src={shirt1_4x}  srcSet={`${shirt1_1x} 220w, ${shirt1_2x} 445w, ${shirt1_4x} 880w`} alt="Товар 2"> </img>
+            <img className="item-image" src={shirt1_4x}  srcSet={`${shirt1_1x} 220w, ${shirt1_2x} 445w, ${shirt1_4x} 880w`} alt="Товар 2"/>
               <div className="item-details">
                 <h2>ФУТБОЛКА С ПРИНТОМ МОСФИЛЬМ</h2>
                 <p>Размер: M/L</p>
                 <p>Цвет: Чёрный</p>
                 <p className="price">1000 р</p>
                 <div className="quantity-controls">
-                  <button className="quantity-control minus">-</button>
+                  <button className="quantity-control minus">–</button>
                   <span className="quantity">1</span>
                   <button className="quantity-control plus">+</button>
                 </div>

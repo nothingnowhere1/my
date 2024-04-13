@@ -2,7 +2,7 @@ import React from "react";
 
 import './sc.css';
 
-import { logo_1x, logo_2x, logo_4x, shirt10_1x,shirt10_2x,shirt10_3x,shirt1_1x,shirt1_2x,shirt1_3x} from '../assets/images'
+import { logo_1x, logo_2x, logo_4x, shirt1_1x,shirt1_2x,shirt1_4x} from '../assets/images'
 
 const Catalog = () => {
     return(
