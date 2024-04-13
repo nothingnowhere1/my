@@ -2,6 +2,7 @@ import React from "react";
 
 import './styles_for_booking.css';
 
+<<<<<<< HEAD
 import { logo_1x } from '../assets/images'
 import { logo_2x } from '../assets/images'
 import { logo_4x } from '../assets/images'
@@ -11,11 +12,15 @@ import { shirt1_4x } from '../assets/images'
 import { shirt6_1x } from '../assets/images'
 import { shirt6_2x } from '../assets/images'
 import { shirt6_4x } from '../assets/images'
+=======
+import { logo_1x, logo_2x } from '../assets/images'
+>>>>>>> 414a64f3956f036fae99b4de551d5d7082a5a9ff
 
 const Booking = () => {
   return (
     <>
       <header className="logo-container">
+<<<<<<< HEAD
         <img
           src={logo_4x}
           srcSet={`${logo_1x} 220w, ${logo_2x} 445w, ${logo_4x} 880w`}
@@ -24,6 +29,9 @@ const Booking = () => {
           width={100}
           height={100}
         />
+=======
+        <img src={logo_1x} alt="Логотип" className="logo" />
+>>>>>>> 414a64f3956f036fae99b4de551d5d7082a5a9ff
       </header>
       <main>
         <section className="container">

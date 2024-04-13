@@ -1,0 +1,184 @@
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+:root {
+    --primary-color: #ccc;
+    --secondary-color: #999;
+    --text-color: #fff;
+    --background-color: #000;
+    --price-color: #0f0;
+}
+
+body{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    }
+
+.half-screen {
+    height: 800px; 
+    background: url('src/assets/images/pic_1x.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    border: 10px solid white;
+}
+
+.screen {
+    position: relative;
+    height: 63vh; 
+    width: 22%;
+    background-color: #515356;
+    border: 5px solid #515356;
+    border-width: 50px 35px 80px 60px;
+    border-radius: 20px;
+    margin-left: 60px;
+}               
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 80px;
+    column-gap: 8em;
+    font-size: 20px;
+    color: white;
+}
+
+
+.photo{
+    width: 300px; 
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.text-overlay {
+    font-family: "Inter", sans-serif;
+    margin-top: 285px;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 10px;
+    color: white;
+}
+
+.text {
+    font-family: "Inter", sans-serif;
+    position: relative;
+    text-align: left;
+    font-size: 23px;
+}
+
+
+.large {
+        font-weight: 800;
+        font-size: 270px;
+        color: #ADFF00;
+    }
+
+.small {
+        font-size: 70px;
+        font-variant: small-caps;
+        color: white;
+}
+
+
+header{
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    font-size: 1.125rem;
+    line-height: 29px;
+    letter-spacing: 1.3px;
+    padding: 0 1rem 45px;
+    transition: height .3s;
+    z-index: 6
+}
+.left-header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu{
+    fill: #fff;
+    stroke: #fff;
+    width: 51px;
+    height: 51px;
+    margin-left: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items:center ;
+}
+
+.right-header{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+ 
+.search{
+    position: relative;
+    fill: #fff;
+    stroke: #fff;
+    width: 51px;
+    height: 51px;
+}
+
+.cart{
+    position: relative;
+    margin-left: 33px;
+    margin-right: 20px;
+    fill: #fff;
+    stroke: #fff;
+    width: 51px;
+    height: 51px;
+}
+
+textitem{
+    color: 'white';
+    font-weight:'bold'
+}
+
+textprice{
+    font-weight:'bold';
+    color: '#ADFF00';
+    font-size: '28px'
+}

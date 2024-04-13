@@ -20,4 +20,3 @@ export { default as shirt7_4x } from './shirt7_4x.png';
 export { default as shirt8_1x } from './shirt8_1x.png';
 export { default as shirt8_2x } from './shirt8_2x.png';
 export { default as shirt8_4x } from './shirt8_4x.png';
-
