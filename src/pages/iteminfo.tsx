@@ -2,11 +2,11 @@ import React from "react";
 
 import './iteminfo.css';
 
-import {Header} from '../Component/Header';
-import {Item} from '../Component/Item';
-import {Description} from '../Component/Description';
-import {Container} from '../Component/Container';
-import {Footer} from '../Component/Footer';
+import {Header} from '../components/Header';
+import {Item} from '../components/Item';
+import {Description} from '../components/Description';
+import {Container} from '../components/Container';
+import {Footer} from '../components/Footer';
 
 const Iteminfo = () => {
     return(
