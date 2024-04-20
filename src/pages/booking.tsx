@@ -1,6 +1,6 @@
 import React from "react";
 
-import './styles_for_booking.css';
+import './booking.css';
 
 import { logo_1x } from '../assets/images'
 import { logo_2x } from '../assets/images'

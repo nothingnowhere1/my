@@ -1,1 +1,0 @@
-export {Item_photo} from './Item_photo'

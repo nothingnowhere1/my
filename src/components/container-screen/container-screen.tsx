@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export const Item_screen = (props) => {
+export const Container_screen = (props) => {
     return (
         <>
             <div className="screen">

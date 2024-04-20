@@ -1,0 +1,1 @@
+export {Item_photo} from './item-photo'

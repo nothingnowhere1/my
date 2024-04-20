@@ -1,5 +1,5 @@
 import React from "react";
-import { Item_screen } from "../Item_screen";
+import { Container_screen } from "../container-screen";
 
 
 const container = [
@@ -25,9 +25,9 @@ export class Container extends React.Component{
         return (
         <>
            <section className="container">
-                    <Item_screen photo = {container[0].photo} alt= {container[0].alt} name = {container[0].name} price ={container[0].price} setphoto = {container[0].setphoto}/>
-                    <Item_screen photo = {container[1].photo} alt= {container[1].alt} name = {container[1].name} price ={container[1].price} setphoto = {container[1].setphoto}/>
-                    <Item_screen photo = {container[2].photo} alt= {container[2].alt} name = {container[2].name} price ={container[2].price} setphoto = {container[2].setphoto}/>
+                    <Container_screen photo = {container[0].photo} alt= {container[0].alt} name = {container[0].name} price ={container[0].price} setphoto = {container[0].setphoto}/>
+                    <Container_screen photo = {container[1].photo} alt= {container[1].alt} name = {container[1].name} price ={container[1].price} setphoto = {container[1].setphoto}/>
+                    <Container_screen photo = {container[2].photo} alt= {container[2].alt} name = {container[2].name} price ={container[2].price} setphoto = {container[2].setphoto}/>
             </section>
         </>)
     }

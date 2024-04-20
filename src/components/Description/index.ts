@@ -1,1 +1,1 @@
-export {Description} from './Description'
+export {Description} from './description'

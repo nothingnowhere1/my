@@ -1,5 +1,5 @@
 import React from "react";
-import {Item_photo} from '../Item_photo'
+import {Item_photo} from '../item-photo'
 
 
 const item_photo = [
