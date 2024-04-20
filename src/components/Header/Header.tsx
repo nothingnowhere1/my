@@ -1,8 +1,5 @@
 import React from "react"
-import ReactDOM from 'react-dom/client';
-
-import '../pages/iteminfo.css';
-import { logo_1x } from "../assets/images";
+import { logo_1x } from "../../assets/images";
 
 export class Header extends React.Component{
     render(){

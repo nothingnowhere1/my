@@ -1,7 +1,4 @@
 import React from "react"
-import ReactDOM from 'react-dom/client';
-
-import '../pages/iteminfo.css';
 
 export class Footer extends React.Component{
     render(){

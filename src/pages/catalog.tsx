@@ -2,8 +2,8 @@ import React from "react";
 
 import './sc.css';
 
-import { logo_1x, logo_2x, logo_4x, shirt1_1x,shirt1_2x,shirt1_4x, shirt2_1x,shirt2_2x,shirt2_4x,shirt4_1x,shirt4_2x,shirt4_4x,shirt6_1x,shirt6_2x,shirt6_4x,shirt7_1x,shirt7_2x,shirt7_4x,shirt8_1x,shirt8_2x,shirt8_4x
-} from '../assets/images'
+import { logo_1x, logo_2x, logo_4x, shirt1_1x,shirt1_2x,shirt1_4x,shirt1_1_1x,shirt1_1_2x,shirt1_1_4x, shirt2_1x,shirt2_2x,shirt2_4x,shirt3_1x, shirt3_2x, shirt3_4x,shirt4_1x,shirt4_2x,shirt4_4x,shirt5_1x, shirt5_2x, shirt5_4x, shirt6_1x,shirt6_2x,shirt6_4x} from '../assets/images'
+
 
 const Catalog = () => {
     return(
@@ -46,7 +46,7 @@ const Catalog = () => {
                     </div>
                 </div>
                 <div className="screen">
-                    <img className="photo" src={shirt6_1x} srcSet={`${shirt6_1x} 220w, ${shirt6_2x} 445w, ${shirt6_4x} 880w`} alt="ФУТБОЛКА С ОРНАМЕНТОМ ПЕЙСЛИ"/>
+                    <img className="photo" src={shirt3_1x} srcSet={`${shirt3_1x} 220w, ${shirt3_2x} 445w, ${shirt3_4x} 880w`} alt="ФУТБОЛКА С ОРНАМЕНТОМ ПЕЙСЛИ"/>
                     <div className="text">    
                         <span  className = "textitem"><br />ФУТБОЛКА С ОРНАМЕНТОМ ПЕЙСЛИ</span>
                         <span className = "textprice"> <br />1500 руб.
@@ -65,7 +65,7 @@ const Catalog = () => {
                     </div>
                 </div>
                 <div className="screen">
-                    <img className="photo" src={shirt7_1x}   srcSet={`${shirt7_1x} 220w, ${shirt7_2x} 445w, ${shirt7_4x} 880w`} alt="ЗИП ХУДИ ОВЕРСАЙЗ С ПРИНТОМ"/>
+                    <img className="photo" src={shirt5_1x}   srcSet={`${shirt5_1x} 220w, ${shirt5_2x} 445w, ${shirt5_4x} 880w`} alt="ЗИП ХУДИ ОВЕРСАЙЗ С ПРИНТОМ"/>
                     <div className="text">    
                         <span className = "textitem"><br />ЗИП ХУДИ ОВЕРСАЙЗ С ПРИНТОМ</span>
                         <span className = "textprice"> <br />1500 руб.
@@ -73,7 +73,7 @@ const Catalog = () => {
                     </div>
                 </div>
                     <div className="screen">
-                    <img className="photo" src={shirt8_1x}  srcSet={`${shirt8_1x} 220w, ${shirt8_2x} 445w, ${shirt8_4x} 880w`} alt="ДЖИНСОВАЯ РУБАШКА С ДЛИННЫМ РУКАВОМ" />
+                    <img className="photo" src={shirt6_1x}  srcSet={`${shirt6_1x} 220w, ${shirt6_2x} 445w, ${shirt6_4x} 880w`} alt="ДЖИНСОВАЯ РУБАШКА С ДЛИННЫМ РУКАВОМ" />
                     <div className="text">    
                         <span className = "textitem"><br />ДЖИНСОВАЯ РУБАШКА С ДЛИННЫМ РУКАВОМ</span>
                         <span className = "textprice"> <br />1500 руб.
