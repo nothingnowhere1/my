@@ -1,0 +1,1 @@
+export {Hero_section} from './catalog-herosection'

@@ -1,11 +1,11 @@
 import React from "react";
 
-import './catalog.css';
+import './info.css';
 import {Header} from '../components/catalog-header/catalog-header';
+import {Item} from '../components/info-item/info-item';
+import {Description} from '../components/info-description/info-description';
 import { Container } from "../components/catalog-container/catalog-container";
-import { Hero_section } from "../components/catalog-herosection";
 import {Footer} from '../components/all-footer/all-footer';
-
 
 const data =[
     [{photo: 'shirt2_1x',
@@ -40,21 +40,18 @@ const data =[
     setphoto: ['shirt1_1x','shirt1_2x', 'shirt1_4x']}]
 ];
 
-const Catalog = () => {
+const Iteminfo = () => {
     return(
         <>
             <Header/>
             <main>
-            <Hero_section/>
-            <Container props = {data[0]}/>
-            <Container props = {data[1]}/>
+                <Item/>
+                <Description/>
+                <Container props={data[0]}/>
             </main>
             <Footer/>
         </>
     )
 }
 
-export default Catalog;
-
-
-
+export default Iteminfo;

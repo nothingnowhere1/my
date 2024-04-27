@@ -1,0 +1,1 @@
+export {Booking_label} from './booking-aside-label'
