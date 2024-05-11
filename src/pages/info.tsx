@@ -1,6 +1,5 @@
 import React from "react";
 
-import './info.css';
 import {Header} from '../components/catalog-header/catalog-header';
 import {Item} from '../components/info-item/info-item';
 import {Description} from '../components/info-description/info-description';

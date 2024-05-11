@@ -1,16 +1,16 @@
 import React from 'react';
+import { Global } from "@emotion/react"
+import { BrowserRouter } from 'react-router-dom';
 
-import Booking from './pages/booking'
-import Catalog from './pages/catalog'
-import Iteminfo from './pages/info';
+import { globalStyles } from "./global-styles";
+import { PageRoutes } from './routes';
 
 const App = () => {
   return (
-    <>
-        {/* <Iteminfo/> */}
-        {/* <Booking/> */}
-        <Catalog/>
-    </>
+    <BrowserRouter>
+        <Global styles={globalStyles} />
+        <PageRoutes/>
+    </BrowserRouter>
   );
 };
 

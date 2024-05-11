@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 export const Screen = styled.div`
     position: relative;
     height: 63vh; 
-    width: 22%;
+    width: 326px;
     background-color: #515356;
     border: 5px solid #515356;
     border-width: 50px 35px 80px 60px;

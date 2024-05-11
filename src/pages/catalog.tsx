@@ -1,6 +1,5 @@
 import React from "react";
 
-import './catalog.css';
 import {Header} from '../components/catalog-header/catalog-header';
 import { Container } from "../components/catalog-container/catalog-container";
 import { Hero_section } from "../components/catalog-herosection";
