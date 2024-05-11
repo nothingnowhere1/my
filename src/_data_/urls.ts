@@ -2,6 +2,6 @@ export const URLs = {
   baseUrl: "/my",
   ui: {
     booking: "/my/booking" ,
-    itemDetail: "/my/itemDetail",
+    itemDetail: "/my/item",
   },
 }
