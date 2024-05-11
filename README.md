@@ -8,7 +8,7 @@
 
 Наш логотип:
 
-<img src= "Logo\logo-white.png" title = "Логотип - квадрат с надписью MY">
+<img src= "src/assets/images/logo_4x.png" title = "Логотип - квадрат с надписью MY">
 
 ## Языки и инструментарий 
 <div>
