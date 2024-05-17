@@ -12,7 +12,7 @@ import {
     Menu,
   } from "./catalog-header.style";
 import { Link } from "../all-link";
-import { URLs } from "../../_data_/urls";
+import { URLs } from "../../__data__/urls";
 
 export const Header = () =>(    
     <Header1>

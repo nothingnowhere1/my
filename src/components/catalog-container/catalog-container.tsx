@@ -1,9 +1,7 @@
 import React from "react";
 
 import { Container_screen } from "../catalog-container-screen";
-import {
-    Container1
-  } from "./catalog-container.style";
+import { Container1 } from "./catalog-container.style";
 
 export const Container= ({props}) =>(
     <Container1>

@@ -8,7 +8,7 @@ import {
     Textitem,
     Textprice,
   } from "./catalog-container-screen.style";
-import { URLs } from "../../_data_/urls";
+import { URLs } from "../../__data__/urls";
 import { Link } from "../all-link";
 
 export const Container_screen = (props) => (

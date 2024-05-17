@@ -3,7 +3,7 @@ import React from "react";
 import { logo_1x,logo_2x,logo_4x } from '../../assets/images'
 import { Header } from "./booking-header.style";
 import { Link } from "../all-link";
-import { URLs } from "../../_data_/urls";
+import { URLs } from "../../__data__/urls";
 
 export const Booking_header = () => {
     return (

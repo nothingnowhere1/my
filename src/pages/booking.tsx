@@ -8,7 +8,7 @@ const Booking = () => {
   return (
     <>
       <Booking_header/>
-      <Booking_main/>
+      <Booking_main data/>
       <Footer/>
     </>
   );

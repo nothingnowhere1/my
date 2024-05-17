@@ -1,59 +1,35 @@
-import React from "react";
-
-import {Header} from '../components/catalog-header/catalog-header';
+import React, { useEffect, useState } from "react";
+import { Header } from '../components/catalog-header/catalog-header';
 import { Container } from "../components/catalog-container/catalog-container";
 import { Hero_section } from "../components/catalog-herosection";
-import {Footer} from '../components/all-footer/all-footer';
-
-
-const data =[
-    [{photo: 'shirt2_1x',
-    alt :"ФУТБОЛКА С ПРИНТОМ МОСФИЛЬМ", 
-    name: "ФУТБОЛКА С ПРИНТОМ МОСФИЛЬМ", 
-    price: "1500 руб.",
-    setphoto: ['shirt2_1x','shirt2_2x', 'shirt2_4x']},
-    {photo: 'shirt3_1x',
-    alt :"ХУДИ УТЕПЛЕННОЕ", 
-    name: "ХУДИ УТЕПЛЕННОЕ", 
-    price: "1500 руб.",
-    setphoto: ['shirt3_1x','shirt3_2x', 'shirt3_4x']},
-    {photo: 'shirt4_1x',
-    alt :"ФУТБОЛКА С ОРНАМЕНТОМ ПЕЙСЛИ", 
-    name: "ФУТБОЛКА С ОРНАМЕНТОМ ПЕЙСЛИ", 
-    price: "1500 руб.",
-    setphoto: ['shirt4_1x','shirt4_2x', 'shirt4_4x']}],
-    [{photo: 'shirt5_1x',
-    alt :"ФУТБОЛКА С ПРИНТОМ МОСФИЛЬМ", 
-    name: "ФУТБОЛКА С ПРИНТОМ МОСФИЛЬМ", 
-    price: "1500 руб.",
-    setphoto: ['shirt5_1x','shirt5_2x', 'shirt5_4x']},
-    {photo: 'shirt6_1x',
-    alt :"ХУДИ УТЕПЛЕННОЕ", 
-    name: "ХУДИ УТЕПЛЕННОЕ", 
-    price: "1500 руб.",
-    setphoto: ['shirt6_1x','shirt6_2x', 'shirt6_4x']},
-    {photo: 'shirt1_1x',
-    alt :"ФУТБОЛКА С ОРНАМЕНТОМ ПЕЙСЛИ", 
-    name: "ФУТБОЛКА С ОРНАМЕНТОМ ПЕЙСЛИ", 
-    price: "1500 руб.",
-    setphoto: ['shirt1_1x','shirt1_2x', 'shirt1_4x']}]
-];
+import { Footer } from '../components/all-footer/all-footer';
 
 const Catalog = () => {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch('/api/catalog-data')
+            .then(response => response.json())
+            .then(data => {
+                setData(data.data);
+            })
+            .catch(error => {
+                console.error('Error fetching catalog data:', error);
+            });
+    }, []);
+    
     return(
         <>
-            <Header/>
+            <Header />
             <main>
-            <Hero_section/>
-            <Container props = {data[0]}/>
-            <Container props = {data[1]}/>
+                <Hero_section />
+                {data.map((item, index) => (
+                    <Container key={index} props={item} />
+                ))}
             </main>
-            <Footer/>
+            <Footer />
         </>
     )
 }
 
 export default Catalog;
-
-
-

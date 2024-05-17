@@ -37,7 +37,3 @@ export const Photo =styled.img`
     position: relative;
     border-radius: 20px;
 `;
-
-
-
-
