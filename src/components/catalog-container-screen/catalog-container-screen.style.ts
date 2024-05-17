@@ -1,39 +1,51 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
-export const Screen = styled.div`
+export const Container1 = styled.div`
     position: relative;
-    height: 63vh; 
-    width: 326px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+`;
+
+export const Screen = styled.div`
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 70%;
+    height: 80%;
+    max-width: 100%;
+    max-height: 100%;
     background-color: #515356;
     border: 5px solid #515356;
-    border-width: 50px 35px 80px 60px;
+    border-width: 40px 50px 70px 50px;
     border-radius: 20px;
-    margin-left: 60px;
-    cursor:pointer;
+    cursor: pointer;
+    margin-left: 25px; 
+    margin-right: 25px;
 `;
 
 export const Text = styled.div`
     font-family: "Inter", sans-serif;
-    position: relative;
-    text-align: left;
-    font-size: 23px;
+    text-align: center;
+    font-size: 3vh;
 `;
 
 export const Textitem = styled.span`
     color: white;
-    font-weight:bold
+    font-weight: bold;
 `;
 
-export const Textprice =styled.span`
-    font-weight:bold;
-    color: #ADFF00;
-    font-size: 28px
+export const Textprice = styled.span`
+    font-weight: bold;
+    color: #adff00;
+    font-size: 5vh;
 `;
 
-export const Photo =styled.img`
-    width: 300px; 
-    height: 400px;
-    position: relative;
+export const Photo = styled.img`
+    width: 100%;
+    height: 80%;
+    max-width: 100%;
+    max-height: 100%; 
     border-radius: 20px;
 `;
