@@ -1,15 +1,27 @@
 import React from "react";
-
 import {
-    Contol,
+    Control,
     Button,
     Quantity,
-  } from "./booking-item-quantitycontol.style";
+} from "./booking-item-quantitycontol.style";
 
-export const Quantity_control = (props) =>  (
-    <Contol>
-            <Button>–</Button>
-            <Quantity>1</Quantity>
-            <Button>+</Button>
-    </Contol>
-)
+export const Quantity_control = ({ quantity, setQuantity }) => {
+    const decreaseQuantity = () => {
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
+        }
+    };
+
+    const increaseQuantity = () => {
+        setQuantity(quantity + 1);
+    };
+
+    return (
+        <Control>
+            <Button onClick={decreaseQuantity}>–</Button>
+            <Quantity>{quantity}</Quantity>
+            <Button onClick={increaseQuantity}>+</Button>
+        </Control>
+    );
+};
+

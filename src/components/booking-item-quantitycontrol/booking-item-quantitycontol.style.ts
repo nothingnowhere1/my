@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
-export const Contol = styled.div`
+export const Control = styled.div`
     display: flex;
     align-items: center;
 `;

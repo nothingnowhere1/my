@@ -1,11 +1,15 @@
 import React from "react";
+import { Price_detail } from "./booking-aside-price.style";
 
-export const Booking_price = (props) => {
+export const Booking_price = ({ count, price, discount }) => {
+    const discountAmount = (price * discount) / 100;
+    const finalPrice = price - discountAmount;
+
     return (
         <>
-            <p>{props.count.reduce((total,current)=>total+current,0)} товара {props.price.reduce((total,current)=>total+current,0)}</p>
-            <p>Скидка - {props.price.reduce((total,current)=>total+current,0)*(props.discount)/100}</p>
-            <p>Итого к оплате - {props.price.reduce((total,current)=>total+current,0)*(100-props.discount)/100}</p>
+            <Price_detail>{count} товара(ов) на сумму {price} руб.</Price_detail>
+            <Price_detail>Скидка - {discountAmount} руб.</Price_detail>
+            <Price_detail>Итого к оплате - {finalPrice} руб.</Price_detail>
         </>
-    )
-}
+    );
+};
