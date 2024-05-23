@@ -2,13 +2,13 @@ import React from "react";
 
 import { logo_1x,logo_2x,logo_4x } from '../../assets/images'
 import { Header } from "./booking-header.style";
-import { link } from "../all-link";
+import { Link } from "../all-link";
 import { URLs } from "../../__data__/urls";
 
 export const Booking_header = () => {
     return (
         <>
-            <link href={URLs.baseUrl}>
+            <Link href={URLs.baseUrl}>
                 <Header>
                     <img
                     src={logo_4x}
@@ -19,7 +19,7 @@ export const Booking_header = () => {
                     height={100}
                     />
                 </Header>
-            </link>
+            </Link>
         </>
     )
 }

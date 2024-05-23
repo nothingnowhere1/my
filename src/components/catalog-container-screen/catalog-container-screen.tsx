@@ -9,10 +9,10 @@ import {
     Textprice,
   } from "./catalog-container-screen.style";
 import { URLs } from "../../__data__/urls";
-import { link } from "../all-link";
+import { Link } from "../all-link";
 
 export const Catalog_container_screen = (props) => (
-    <link href={URLs.ui.itemDetail}>
+    <Link href={URLs.ui.itemDetail}>
         <Screen>
             <Photo src={landing[props.photo]}  alt={props.alt} 
                     srcSet={`${landing[props.setphoto[0]]} 220w, ${landing[props.setphoto[1]]} 445w, ${landing[props.setphoto[2]]} 880w`}/>
@@ -21,5 +21,5 @@ export const Catalog_container_screen = (props) => (
                 <Textprice><br />{props.price}</Textprice>
             </Text>
         </Screen>
-    </link>
+    </Link>
 )

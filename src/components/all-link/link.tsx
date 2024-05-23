@@ -7,7 +7,7 @@ interface LinkProps {
   children: React.ReactNode;
 }
 
-export const link = (props: LinkProps) => {
+export const Link = (props: LinkProps) => {
   const isExternal = useMemo(() => props.href?.startsWith('http'), [props.href]);
 
   const linkProps: any = {}
