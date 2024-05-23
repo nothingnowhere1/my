@@ -1,1 +1,1 @@
-export {Booking_price} from './booking-aside-price'
+export {Booking_aside_price} from './booking-aside-price'

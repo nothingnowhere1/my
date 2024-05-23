@@ -1,1 +1,1 @@
-export {Hero_section} from './catalog-herosection'
+export {Catalog_herosection} from './catalog-herosection'

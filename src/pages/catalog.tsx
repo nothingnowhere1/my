@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Header } from '../components/catalog-header/catalog-header';
-import { Container } from "../components/catalog-container/catalog-container";
-import { Hero_section } from "../components/catalog-herosection";
-import { Footer } from '../components/all-footer/all-footer';
+import { Catalog_header } from '../components/catalog-header';
+import { Catalog_container } from "../components/catalog-container";
+import { Catalog_herosection } from "../components/catalog-herosection";
+import { All_footer } from '../components/all-footer';
 
 const Catalog = () => {
     const [data, setData] = useState([]);
@@ -20,14 +20,14 @@ const Catalog = () => {
     
     return(
         <>
-            <Header />
+            <Catalog_header />
             <main>
-                <Hero_section />
+                <Catalog_herosection />
                 {data.map((item, index) => (
-                    <Container key={index} props={item} />
+                    <Catalog_container key={index} props={item} />
                 ))}
             </main>
-            <Footer />
+            <All_footer/>
         </>
     )
 }

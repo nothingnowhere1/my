@@ -5,7 +5,7 @@ import {
   Input,
 } from "./booking-aside-label.style"
 
-export const Booking_label = ({
+export const Booking_aside_label = ({
   id,
   type,
   sample,
@@ -25,6 +25,6 @@ export const Booking_label = ({
   </>
 )
 
-Booking_label.defaultProps = {
+Booking_aside_label.defaultProps = {
   pattern: void 0
 };

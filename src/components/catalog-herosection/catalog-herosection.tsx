@@ -7,7 +7,7 @@ import {
     Small,
   } from "./catalog-herosection.style";
 
-export const Hero_section = (props) => {
+export const Catalog_herosection = (props) => {
     return (
         <>
             <Half_screen >

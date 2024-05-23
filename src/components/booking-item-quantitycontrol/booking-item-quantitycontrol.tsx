@@ -5,7 +5,7 @@ import {
     Quantity,
 } from "./booking-item-quantitycontol.style";
 
-export const Quantity_control = ({ quantity, setQuantity }) => {
+export const Booking_item_quantitycontol = ({ quantity, setQuantity }) => {
     const decreaseQuantity = () => {
         if (quantity > 1) {
             setQuantity(quantity - 1);

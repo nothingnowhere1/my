@@ -1,1 +1,1 @@
-export {Booking_label} from './booking-aside-label'
+export {Booking_aside_label} from './booking-aside-label'

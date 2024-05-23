@@ -1,1 +1,1 @@
-export {Quantity_control} from './booking-item-quantitycontrol'
+export {Booking_item_quantitycontol} from './booking-item-quantitycontrol'

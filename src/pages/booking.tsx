@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Footer } from "../components/all-footer";
+import { All_footer } from "../components/all-footer";
 import { Booking_main } from "../components/booking-main";
 import { Booking_header } from "../components/booking-header";
 
@@ -9,7 +9,7 @@ const Booking = () => {
     <>
       <Booking_header/>
       <Booking_main data/>
-      <Footer/>
+      <All_footer/>
     </>
   );
 };

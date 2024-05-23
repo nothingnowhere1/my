@@ -1,1 +1,1 @@
-export {Item_photo} from './info-item-photo'
+export {Info_item_photo} from './info-item-photo'

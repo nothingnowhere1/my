@@ -1,1 +1,1 @@
-export {Container} from './catalog-container'
+export {Catalog_container} from './catalog-container'

@@ -8,7 +8,7 @@ import {
     Span,
   } from "./all-footer.style";
 
-export const Footer = (props) =>(
+export const All_footer = (props) => (
     <>
         <hr style={{ color: 'gray', marginTop: 60}} />
         <Footer1>
@@ -44,4 +44,4 @@ export const Footer = (props) =>(
             </Container2>
         </Footer1>
     </>
-)
+);

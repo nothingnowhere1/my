@@ -1,7 +1,7 @@
 import React from "react";
 import { Price_detail } from "./booking-aside-price.style";
 
-export const Booking_price = ({ count, price, discount }) => {
+export const Booking_aside_price = ({ count, price, discount }) => {
     const discountAmount = (price * discount) / 100;
     const finalPrice = price - discountAmount;
 
