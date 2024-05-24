@@ -34,7 +34,7 @@ const item_info = {
     size: ["XS/S","M/L","XL/XLL"]
 }
 
-export const Info_item = (props) =>( 
+export const Info_item = () =>( 
     <>
         <Item1>
             <Item_photo1>
