@@ -1,1 +1,1 @@
-export {Container_screen} from './catalog-container-screen'
+export {Catalog_container_screen} from './catalog-container-screen'

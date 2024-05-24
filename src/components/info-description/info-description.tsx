@@ -8,7 +8,7 @@ import {
     Opis,
   } from "./info-description.style";
 
-export const Description = (props) =>( 
+export const Info_description = () =>( 
     <>
         <Hr/>
         <Details>

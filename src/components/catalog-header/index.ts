@@ -1,1 +1,1 @@
-export {Header} from './catalog-header'
+export {Catalog_header} from './catalog-header'

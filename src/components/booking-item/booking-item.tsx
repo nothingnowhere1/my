@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Quantity_control } from "../booking-item-quantitycontrol";
+import { Booking_item_quantitycontol } from "../booking-item-quantitycontrol";
 import { landing } from "../../assets/images";
 import {
   Item,
@@ -29,7 +29,7 @@ export const Booking_item = ({
       <P>Размер: {size}</P>
       <P>Цвет: {color}</P>
       <Price>{price} руб.</Price>
-      <Quantity_control quantity={quantity} setQuantity={setQuantity} />
+      <Booking_item_quantitycontol quantity={quantity} setQuantity={setQuantity} />
     </Item_details>
   </Item>
 );

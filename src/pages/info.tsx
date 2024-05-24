@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-import {Header} from '../components/catalog-header/catalog-header';
-import {Item} from '../components/info-item/info-item';
-import {Description} from '../components/info-description/info-description';
-import { Container } from "../components/catalog-container/catalog-container";
-import {Footer} from '../components/all-footer/all-footer';
+import {Catalog_header} from '../components/catalog-header';
+import {Info_item} from '../components/info-item';
+import {Info_description} from '../components/info-description';
+import {Catalog_container } from "../components/catalog-container";
+import {All_footer} from '../components/all-footer';
 
-const Iteminfo = () => {
+const Info = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -22,21 +22,21 @@ const Iteminfo = () => {
 
     return(
         <>
-            <Header/>
+            <Catalog_header/>
             <main>
-                <Item/>
-                <Description/>
+                <Info_item/>
+                <Info_description/>
                 {data.map((item, index) => {
                 if (index === 1) {
-                    return <Container key={index} props={item} />;
+                    return <Catalog_container key={index} props={item} />;
                 } else {
                     return null;
                 }
             })}
             </main>
-            <Footer/>
+            <All_footer/>
         </>
     )
 }
 
-export default Iteminfo;
+export default Info;

@@ -1,1 +1,1 @@
-export {Footer} from './all-footer'
+export {All_footer} from './all-footer'

@@ -5,26 +5,28 @@ import {
   Input,
 } from "./booking-aside-label.style"
 
-export const Booking_label = ({
-  id,
-  type,
-  sample,
-  pattern,
-  text,
-}) => (
+interface LabelProps {
+  id: string;
+  type: string;
+  sample: string;
+  pattern: string;
+  text:string;
+}
+
+export const Booking_aside_label = (props: LabelProps) => (
   <>
-      <Label htmlFor={id}>{text}</Label>
+      <Label htmlFor={props.id}>{props.text}</Label>
         <Input
-          type={type}
-          id={id}
-          name={id}
-          pattern={pattern}
-          placeholder={sample}
+          type={props.type}
+          id={props.id}
+          name={props.id}
+          pattern={props.pattern}
+          placeholder={props.sample}
           required
         />
   </>
 )
 
-Booking_label.defaultProps = {
+Booking_aside_label.defaultProps = {
   pattern: void 0
 };

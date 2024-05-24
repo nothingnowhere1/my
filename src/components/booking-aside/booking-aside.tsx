@@ -1,12 +1,14 @@
 import React from "react";
 
-import { Booking_button } from "../booking-aside-button";
-import { Booking_label } from "../booking-aside-label";
-import { Booking_price } from "../booking-aside-price";
+import { Booking_aside_button } from "../booking-aside-button";
+import { Booking_aside_label } from "../booking-aside-label";
+import { Booking_aside_price } from "../booking-aside-price";
 import {
     Aside,
     Form
   } from "./booking-aside.style"
+
+
 
 const labels = [
     {
@@ -49,7 +51,7 @@ export const Booking_aside = ({ data }) => {
         <Aside>
             <Form action="#">
                 {labels.map((item) => (
-                    <Booking_label
+                    <Booking_aside_label
                         key={item.id}
                         id={item.id}
                         type={item.type}
@@ -58,8 +60,8 @@ export const Booking_aside = ({ data }) => {
                         sample={item.sample}
                     />
                 ))}
-                <Booking_price count={totalQuantity} price={totalPrice} discount={discount} />
-                <Booking_button />
+                <Booking_aside_price count={totalQuantity} price={totalPrice} discount={discount} />
+                <Booking_aside_button/>
             </Form>
         </Aside>
     );

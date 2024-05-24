@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Item_photo} from '../info-item-photo'
+import {Info_item_photo} from '../info-item-photo'
 import {
     Item1,
     Item_info,
@@ -34,12 +34,12 @@ const item_info = {
     size: ["XS/S","M/L","XL/XLL"]
 }
 
-export const Item = (props) =>( 
+export const Info_item = () =>( 
     <>
         <Item1>
             <Item_photo1>
-                <Item_photo photo = {item_photo[0].photo} altphoto = {item_photo[0].alt} setphoto = {item_photo[0].setphoto}/> 
-                <Item_photo photo = {item_photo[1].photo} altphoto = {item_photo[1].alt} setphoto = {item_photo[1].setphoto} margin={{marginLeft:'20px'}}/> 
+                <Info_item_photo photo = {item_photo[0].photo} altphoto = {item_photo[0].alt} setphoto = {item_photo[0].setphoto}/> 
+                <Info_item_photo photo = {item_photo[1].photo} altphoto = {item_photo[1].alt} setphoto = {item_photo[1].setphoto} margin={{marginLeft:'20px'}}/> 
             </Item_photo1>
             <Item_info>
                 <Product_title>{item_info.name}</Product_title>

@@ -11,7 +11,7 @@ import {
 import { URLs } from "../../__data__/urls";
 import { Link } from "../all-link";
 
-export const Container_screen = (props) => (
+export const Catalog_container_screen = (props) => (
     <Link href={URLs.ui.itemDetail}>
         <Screen>
             <Photo src={landing[props.photo]}  alt={props.alt} 
