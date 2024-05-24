@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import { Catalog_header } from '../components/catalog-header';
 import { Catalog_container } from "../components/catalog-container";
 import { Catalog_herosection } from "../components/catalog-herosection";
@@ -7,7 +6,7 @@ import { All_footer } from '../components/all-footer';
 
 const Catalog = () => {
     const [data, setData] = useState([]);
-
+    
     useEffect(() => {
         fetch('/api/catalog-data')
             .then(response => response.json())
@@ -19,7 +18,7 @@ const Catalog = () => {
             });
     }, []);
     
-    return(
+    return (
         <>
             <Catalog_header />
             <main>

@@ -32,6 +32,7 @@ export const Right_header = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 10px; 
 `;
 
 export const Button = styled.button`
@@ -53,14 +54,6 @@ export const Cart = styled.svg`
     height: 51px;
 `;
 
-export const Search = styled.svg`
-    position: relative;
-    fill: #fff;
-    stroke: #fff;
-    width: 51px;
-    height: 51px;
-`;
-
 export const Menu = styled.svg`
     fill: #fff;
     stroke: #fff;
@@ -69,3 +62,25 @@ export const Menu = styled.svg`
     margin-left: 20px;
 `;
 
+export const SearchForm = styled.form`
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 400px;
+`;
+
+export const SearchButton = styled(Button)`
+  height: 40px;
+  margin-left: 25px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 20px;
+  background-color: var(--primary-color); 
+    color: var(--background-color); 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--secondary-color);
+    }
+`;
