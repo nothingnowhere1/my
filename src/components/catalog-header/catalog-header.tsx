@@ -14,9 +14,8 @@ import {
 import { Link } from "../all-link";
 import { URLs } from "../../__data__/urls";
 import { InputField } from "../field/field";
-import itemSuccessData from "C:/Users/Admin/Desktop/my/stubs/json/search/item.success.json";
 
-export const Header = () => {  
+export const Catalog_header = () => {  
     const [searchValue, setSearchValue] = useState("");
     const [searchValueError, setSearchValueError] = useState(false);
     const searchInputRef = useRef<any>();
@@ -52,8 +51,7 @@ export const Header = () => {
         })
         .then((response) => response.json())
         .then((data) => {
-            const searchData = itemSuccessData.data;
-            console.log('Search data:', searchData);
+        
         })
         .catch(error => {
             console.error('Error searching data:', error);
