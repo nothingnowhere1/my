@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import { Catalog_header } from '../components/catalog-header';
 import { Catalog_container } from "../components/catalog-container";
 import { Catalog_herosection } from "../components/catalog-herosection";

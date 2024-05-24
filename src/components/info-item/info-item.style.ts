@@ -62,20 +62,21 @@ export const Product_price = styled.p`
 `;
 
 export const Withoutborder = styled.button`
-    background-color: #000;
+    background-color: var(--price-color);
     border: none;
+    border-radius: 0;
     padding: 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    border-radius: 0%;
+    cursor: pointer;
 `;
 
 export const Buttontext = styled.p`
     font-size: 120%;
-    color: #fff;
+    color: #000;
     font-weight: lighter;
 `;
 

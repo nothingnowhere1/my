@@ -7,18 +7,29 @@ import {Catalog_container } from "../components/catalog-container";
 import {All_footer} from '../components/all-footer';
 
 const Info = () => {
-    const [data, setData] = useState([]);
+    const [catalogdata, setcatalogData] = useState([]);
+    const [itemdata, setitemData] = useState([]);
 
     useEffect(() => {
         fetch('/api/catalog-data')
             .then(response => response.json())
-            .then(data => {
-                setData(data.data);
+            .then(catalogdata => {
+                setcatalogData(catalogdata.data);
+            })
+            .catch(error => {
+                console.error('Error fetching catalog data:', error);
+            });
+        fetch('/api/item-data')
+            .then(response => response.json())
+            .then(itemdata => {
+                setitemData(itemdata.data);
             })
             .catch(error => {
                 console.error('Error fetching catalog data:', error);
             });
     }, []);
+
+
 
     return(
         <>
@@ -26,7 +37,7 @@ const Info = () => {
             <main>
                 <Info_item/>
                 <Info_description/>
-                {data.map((item, index) => {
+                {catalogdata.map((item, index) => {
                 if (index === 1) {
                     return <Catalog_container key={index} props={item} />;
                 } else {

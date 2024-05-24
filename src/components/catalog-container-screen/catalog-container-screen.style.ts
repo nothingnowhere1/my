@@ -11,7 +11,7 @@ export const Screen = styled.div`
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
-    width: 70%;
+    width: 340px;
     height: 80%;
     max-width: 100%;
     max-height: 100%;

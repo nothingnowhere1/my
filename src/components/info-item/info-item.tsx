@@ -60,7 +60,7 @@ export const Info_item = () =>(
                         <Buttontext>{item_info.size[2]}</Buttontext>
                     </Withoutborder>
                 </div>  
-                <Book_button type="submit">Забронировать</Book_button> 
+                <Book_button type="submit">Купить</Book_button> 
             </Item_info>
         </Item1>
     </>

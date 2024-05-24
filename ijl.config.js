@@ -9,7 +9,9 @@ module.exports = {
   },
   /* use https://kc.admin.inno-js.ru/ to create config, navigations and features */
   navigations: {
-    'my.main': '/my'
+    "my.main": "/my",
+    "my.booking": "/booking",
+    "my.item.info": "/item/:itemId"
   },
   features: {
     'my': {
