@@ -26,10 +26,14 @@ export const Info_item = (props) =>(
             </Item_photo1>
             <Item_info>
                 <Product_title>{props.name}</Product_title>
-                <Product_color>Белый</Product_color>
+                <Product_color>{props.color}</Product_color>
                 <div>
-                <Color1 type="submit"></Color1>
-                <Color2 type="submit"></Color2>
+                <Link href = {URLs.ui.itemDetail.getUrl(props.colorId)} >
+                    <Color1 type="submit" style={{ backgroundColor: props.colorcss[0] }}></Color1>
+                </Link>
+                <Link href = {URLs.ui.itemDetail.getUrl(props.colorId)} >
+                    <Color2 type="submit" style={{ backgroundColor: props.colorcss[1] }}></Color2>
+                </Link>
                 </div>  
                 <Product_price>{props.price}</Product_price>
                 <div>
