@@ -1,39 +1,52 @@
 {
-    "data": [
-        [{"id": 1,
+    "data":[
+        [{
+        "id": 1,
         "photo": "shirt7_1x",
         "alt" :"ФУТБОЛКА 'ЧЕРНОЕ МОРЕ'", 
         "name": "ФУТБОЛКА 'ЧЕРНОЕ МОРЕ'",
         "price": "1500 руб.",
-        "setphoto": ["shirt7_1x","shirt7_2x", "shirt7_4x"]},
-        {"id": 2,
+        "setphoto": ["shirt7_1x","shirt7_2x","shirt7_4x"]
+    },
+    {
+        "id":2,
         "photo": "shirt8_1x",
         "alt" :"ЗИП МУЖСКОЙ", 
-        "name": "ЗИП МУЖСКОЙ", 
+        "name": "ЗИП МУЖСКОЙ",
         "price": "1500 руб.",
-        "setphoto": ["shirt8_1x","shirt8_2x", "shirt8_4x"]},
-        {"id": 3,
+        "setphoto": ["shirt8_1x","shirt8_2x","shirt8_4x"]
+    },
+    {
+        "id": 3,
         "photo": "shirt1_1x",
-        "alt" :"Футболка с принтом Мосфильм", 
-        "name": "Футболка с принтом Мосфильм", 
+        "alt" :"Фотография футболки белого цвета с цитатой из К/ф Кавказская пленница", 
+        "name": "ФУТБОЛКА С ПРИНТОМ МОСФИЛЬМ",
         "price": "1500 руб.",
-        "setphoto": ["shirt1_1x","shirt1_2x", "shirt1_4x"]}],
-        [{"id": 4,
-        "photo": "shirt6_1x",
-        "alt" :"ФУТБОЛКА С ОРНАМЕНТОМ ПЕЙСЛИ", 
-        "name": "ФУТБОЛКА С ОРНАМЕНТОМ ПЕЙСЛИ", 
+        "setphoto": ["shirt1_1x","shirt1_2x","shirt1_4x"]
+    }],
+    [{
+        "id": 4,
+        "photo": "shirt9_1x",
+        "alt" :"ЛАВАНДОВОЕ ХУДИ", 
+        "name": "ЛАВАНДОВОЕ ХУДИ",
         "price": "1500 руб.",
-        "setphoto": ["shirt6_1x","shirt6_2x", "shirt6_4x"]},
-        {"id": 5,
-        "photo": "shirt5_1x",
-        "alt" :"ЗИП С ПРИНТОМ", 
-        "name": "ЗИП С ПРИНТОМ", 
+        "setphoto": ["shirt9_1x","shirt9_2x","shirt9_4x"]
+    }, 
+    {
+        "id": 5,
+        "photo": "shirt10_1x",
+        "alt" :"ФУТБОЛКА АНИМЕ", 
+        "name": "ФУТБОЛКА АНИМЕ",
         "price": "1500 руб.",
-        "setphoto": ["shirt5_1x","shirt5_2x", "shirt5_4x"]},
-        {"id": 6,
-        "photo": "shirt1_1x",
-        "alt" :"ФУТБОЛКА С ОРНАМЕНТОМ МОСФИЛЬМ", 
-        "name": "ФУТБОЛКА С ОРНАМЕНТОМ МОСФИЛЬМ", 
+        "setphoto": ["shirt10_1x","shirt10_2x","shirt10_4x"]
+    },
+    {
+        "id": 6,
+        "photo":"shirt11_1x",
+        "alt" :"ФУТБОЛКА ОВЕРСАЙЗ С ПРИНТОМ ЭРАРТА", 
+        "name": "ФУТБОЛКА ОВЕРСАЙЗ С ПРИНТОМ ЭРАРТА",
         "price": "1500 руб.",
-        "setphoto": ["shirt1_1x","shirt1_2x", "shirt1_4x"]}]]
+        "setphoto": ["shirt11_1x","shirt11_2x", "shirt11_4x"]
+    }]
+    ]
 }

@@ -22,6 +22,7 @@ export const Product_title =styled.h1`
     font-size: 30px;
     font-family: "Jost", sans-serif;
     padding: 10px 0 20px;
+    text-align: center;
     color:#fff;
 `;
 
