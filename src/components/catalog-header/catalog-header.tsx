@@ -1,4 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+
 import { logo_1x } from "../../assets/images";
 import {
     Header1,
@@ -19,6 +21,7 @@ export const Catalog_header = () => {
     const [searchValue, setSearchValue] = useState("");
     const [searchValueError, setSearchValueError] = useState(false);
     const searchInputRef = useRef<any>();
+    const nav = useNavigate();
 
     useEffect(() => {
         searchInputRef.current.focus();
@@ -49,14 +52,23 @@ export const Catalog_header = () => {
                 'Content-Type': 'application/json'
             }
         })
-        .then((response) => response.json())
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then((data) => {
-        
+            if (data && data.data && data.data.id) {
+                nav(URLs.ui.itemDetail.getUrl(data.data.id));
+            } else {
+                nav(URLs.baseUrl);
+            }
         })
         .catch(error => {
             console.error('Error searching data:', error);
         });
-    };
+    };    
 
     return (
         <Header1>
@@ -83,9 +95,9 @@ export const Catalog_header = () => {
                         />
                         {searchValueError && <span style={{ color: 'red', position: 'absolute', bottom: '-30px', left: '0' }}>Некорректный ввод</span>}
                     </div>
-                    <SearchButton type="submit">Поиск</SearchButton>
+                    <SearchButton type="submit" onClick={handleSubmitSearchForm}>Поиск</SearchButton>
                 </SearchForm>
-                <Link href={URLs.ui.booking}>
+                <Link href={URLs.booking}>
                     <Button type="button">
                         <Cart xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd">
                             <path d="M13.5 21c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m-6 2c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m16.5-16h-2.964l-3.642 15h-13.321l-4.073-13.003h19.522l.728-2.997h3.75v1zm-22.581 2.997l3.393 11.003h11.794l2.674-11.003h-17.861z"/>
