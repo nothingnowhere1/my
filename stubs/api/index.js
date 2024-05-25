@@ -11,11 +11,10 @@ router.post('/search', (request, response) => {
   const searchTerm = request.body.search.toLowerCase();
 
   try {
-      const itemsData = require('../json/search/item.success.json');
+      const itemsData = require('../json/catalog-data/newsuccess.json');
       const itemData = itemsData.data.find(item => item.name.toLowerCase().includes(searchTerm));
 
       if (itemData) {
-          console.log('Item found:', itemData);
           return response.json({ data: itemData });
       } else {
           console.log('Item not found');
