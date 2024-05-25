@@ -10,9 +10,7 @@ export const URLs = {
     itemDetail: {
       url: `${baseUrl}${getNavigationsValue('my.item.info')}`,
       on: Boolean(getNavigationsValue('my.item.info')),
-      getUrl: (itemId: number) => generatePath(`${baseUrl}${getNavigationsValue('my.item.info')}`, { itemId })
+      getUrl: (itemId) => generatePath(`${baseUrl}${getNavigationsValue('my.item.info')}`, { itemId })
     }
   }
 }
-
-console.log(URLs.ui.itemDetail.url)
