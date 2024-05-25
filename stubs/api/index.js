@@ -1,17 +1,31 @@
-const router = require('express').Router();
+  const router = require('express').Router();
 
-router.get('/catalog-data', (request, response) => {
+  router.get('/catalog-data', (request, response) => {
     response.send(require('../json/catalog-data/success.json'))
   })
 
-router.post('/search', (req, res) => {
-  const { search } = req.body;
-
-  if (search === "Футболка с принтом Мосфильм") {
-    return res.send(require("../json/seach/item.success.json"));
-  }
-
-  res.send(require("../json/seach/success.json"));
+router.get('/item-data', (request, response) => {
+  response.send(require('../json/catalog-data/newsuccess.json'))
 })
+router.post('/search', (request, response) => {
+  const searchTerm = request.body.search.toLowerCase();
+
+  try {
+      const itemsData = require('../json/search/item.success.json');
+      const itemData = itemsData.data.find(item => item.name.toLowerCase().includes(searchTerm));
+
+      if (itemData) {
+          console.log('Item found:', itemData);
+          return response.json({ data: itemData });
+      } else {
+          console.log('Item not found');
+          return response.status(404).send('Item not found');
+      }
+  } catch (error) {
+      console.error('Error reading file:', error);
+      return response.status(500).send('Internal server error');
+  }
+});
+
 
 module.exports = router;
