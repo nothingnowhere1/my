@@ -9,15 +9,13 @@ export const Container1 = styled.div`
 export const Screen = styled.div`
     display: flex; 
     flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    width: 340px;
-    height: 80%;
+    width: 370px;
+    height: 700px;
     max-width: 100%;
     max-height: 100%;
     background-color: #515356;
     border: 5px solid #515356;
-    border-width: 40px 50px 70px 50px;
+    border-width: 50px 50px 0px 50px;
     border-radius: 20px;
     cursor: pointer;
     margin-left: 25px; 
@@ -28,22 +26,24 @@ export const Text = styled.div`
     font-family: "Inter", sans-serif;
     text-align: center;
     font-size: 3vh;
+    margin-top: 50px;
 `;
 
-export const Textitem = styled.span`
+export const Textitem = styled.div`
     color: white;
     font-weight: bold;
 `;
 
-export const Textprice = styled.span`
+export const Textprice = styled.div`
     font-weight: bold;
     color: #adff00;
+    margin-top: 20px;
     font-size: 5vh;
 `;
 
 export const Photo = styled.img`
-    width: 100%;
-    height: 80%;
+    width: 400px;
+    height: 500px;
     max-width: 100%;
     max-height: 100%; 
     border-radius: 20px;

@@ -22,6 +22,7 @@ export const Product_title =styled.h1`
     font-size: 30px;
     font-family: "Jost", sans-serif;
     padding: 10px 0 20px;
+    text-align: center;
     color:#fff;
 `;
 
@@ -82,7 +83,7 @@ export const Buttontext = styled.p`
 
 export const Book_button = styled.button`
     margin-top: 60px; 
-    width: 50%;
+    width: 200px;
     padding: 20px;
     background-color: #ADFF00; 
     color: #000; 
