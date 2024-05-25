@@ -27,8 +27,8 @@
     [{
         "id": 4,
         "photo": "shirt9_1x",
-        "alt" :"ЛАВАНДОВОЕ ХУДИ", 
-        "name": "ЛАВАНДОВОЕ ХУДИ",
+        "alt" :"ХУДИ", 
+        "name": "ХУДИ",
         "price": "1500 руб.",
         "setphoto": ["shirt9_1x","shirt9_2x","shirt9_4x"]
     }, 
