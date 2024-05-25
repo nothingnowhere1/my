@@ -6,11 +6,13 @@ import {Info_description} from '../components/info-description';
 import {Catalog_container } from "../components/catalog-container";
 import {All_footer} from '../components/all-footer';
 import { useParams } from "react-router-dom";
+import { Item } from "../components/booking-item/booking-item.style";
+import { Item_info } from "../components/info-item/info-item.style";
 
 const Info = () => {
     const [catalogdata, setcatalogData] = useState([]);
     const [itemdata, setitemData] = useState([]);
-    const {id} = useParams();
+    const id = useParams().itemId;
 
     useEffect(() => {
         fetch('/api/catalog-data')
@@ -31,23 +33,20 @@ const Info = () => {
             });
     }, []);
 
-
-    function findElementById(arr, id) {
-            for (let i = 0; i < arr.length; i++) {
-                if (arr[i].id === id) {
-                    return arr[i];
-                }
-            }
-            return null;
-    }
-
+    const findElementById = (id) => itemdata.find(element => element.id == parseInt(id)) || null;
+    const item_info = findElementById(id);
+    console.log(item_info);
 
     return(
         <>
             <Catalog_header/>
                 <main>
-                    <Info_item/>
-                    <Info_description/>
+                    {item_info && (
+                        <>
+                            <Info_item {...item_info} />
+                            <Info_description props = {item_info} />
+                        </>
+                    )}
                     {catalogdata.map((item, index) => {
                     if (index === 1) {
                         return <Catalog_container key={index} props={item} />;

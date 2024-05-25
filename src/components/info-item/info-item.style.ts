@@ -82,7 +82,7 @@ export const Buttontext = styled.p`
 
 export const Book_button = styled.button`
     margin-top: 60px; 
-    width: 50%;
+    width: 200px;
     padding: 20px;
     background-color: #ADFF00; 
     color: #000; 

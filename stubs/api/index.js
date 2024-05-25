@@ -1,6 +1,6 @@
-  const router = require('express').Router();
+const router = require('express').Router();
 
-  router.get('/catalog-data', (request, response) => {
+router.get('/catalog-data', (request, response) => {
     response.send(require('../json/catalog-data/success.json'))
   })
 

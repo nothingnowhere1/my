@@ -8,7 +8,7 @@ import {
     Opis,
   } from "./info-description.style";
 
-export const Info_description = () =>( 
+export const Info_description = ({props}) =>( 
     <>
         <Hr/>
         <Details>
@@ -32,21 +32,21 @@ export const Info_description = () =>(
                     Пол:
                 </Spisok>
                 <Spisok style={{marginLeft: "40px"}}>
-                    79776<br/>
-                    Весна-Лето 2021<br />
-                    Третьяковская галерея<br />
-                    без застежки<br />
-                    темно-серый<br />
-                    100% Хлопок<br />
-                    свободный<br />
-                    надписи<br />
-                    удлиненная<br />
-                    101-78-96<br />
-                    189<br />
-                    L (50)<br />
-                    без карманов<br />
-                    160<br />
-                    Женский
+                    {props.body[0]} <br />
+                    {props.body[1]} <br />
+                    {props.body[2]} <br />
+                    {props.body[3]} <br />
+                    {props.body[4]} <br />
+                    {props.body[5]} <br />
+                    {props.body[6]} <br />
+                    {props.body[7]}<br />
+                    {props.body[8]} <br />
+                    {props.body[9]} <br />
+                    {props.body[10]} <br />
+                    {props.body[11]}<br />
+                    {props.body[12]} <br />
+                    {props.body[13]} <br />
+                    {props.body[14]} <br />
                 </Spisok>
             </Div>
         </Details>
