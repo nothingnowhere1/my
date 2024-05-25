@@ -3,12 +3,13 @@ import { Catalog_header } from '../components/catalog-header';
 import { Catalog_container } from "../components/catalog-container";
 import { Catalog_herosection } from "../components/catalog-herosection";
 import { All_footer } from '../components/all-footer';
+import { getConfigValue } from "@ijl/cli";
 
 const Catalog = () => {
     const [data, setData] = useState([]);
     
     useEffect(() => {
-        fetch('/api/catalog-data')
+        fetch(getConfigValue("my.api")+'/catalog-data')
             .then(response => response.json())
             .then(data => {
                 setData(data.data);

@@ -19,6 +19,6 @@ module.exports = {
     },
   },
   config: {
-    key: 'value'
+    "my.api": "/api"
   }
 }

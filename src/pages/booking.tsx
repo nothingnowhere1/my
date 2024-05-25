@@ -5,10 +5,11 @@ import { Booking_main } from "../components/booking-main";
 import { Booking_header } from "../components/booking-header";
 
 const Booking = () => {
+  
   return (
     <>
       <Booking_header/>
-      <Booking_main data/>
+      <Booking_main />
       <All_footer/>
     </>
   );

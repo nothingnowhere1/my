@@ -7,6 +7,9 @@ router.get('/catalog-data', (request, response) => {
 router.get('/item-data', (request, response) => {
   response.send(require('../json/catalog-data/newsuccess.json'))
 })
+router.get('/item1-data', (request, response) => {
+  response.send(require('../json/catalog-data/success1.json'))
+})
 router.post('/search', (request, response) => {
   const searchTerm = request.body.search.toLowerCase();
 

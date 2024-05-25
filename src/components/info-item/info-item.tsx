@@ -17,7 +17,8 @@ import {
     Book_button
   } from "./info-item.style";
 
-export const Info_item = (props) =>( 
+
+export const Info_item = (props) =>  ( 
     <>
         <Item1>
             <Item_photo1>
@@ -28,12 +29,12 @@ export const Info_item = (props) =>(
                 <Product_title>{props.name}</Product_title>
                 <Product_color>{props.color}</Product_color>
                 <div>
-                <Link href = {URLs.ui.itemDetail.getUrl(props.colorId)} >
-                    <Color1 type="submit" style={{ backgroundColor: props.colorcss[0] }}></Color1>
-                </Link>
-                <Link href = {URLs.ui.itemDetail.getUrl(props.colorId)} >
-                    <Color2 type="submit" style={{ backgroundColor: props.colorcss[1] }}></Color2>
-                </Link>
+                    <Link href = {URLs.ui.itemDetail.getUrl(props.colorid)} >
+                        <Color1 type="submit" style={{ backgroundColor: props.colorcss[0] }}></Color1>
+                    </Link>
+                    <Link href = {URLs.ui.itemDetail.getUrl(props.colorid)} >
+                        <Color2 type="submit" style={{ backgroundColor: props.colorcss[1] }}></Color2>
+                    </Link>       
                 </div>  
                 <Product_price>{props.price}</Product_price>
                 <div>
@@ -54,3 +55,8 @@ export const Info_item = (props) =>(
         </Item1>
     </>
 )
+
+Info_item.defaultProps = {
+    colorid: 1,
+    colorcss: ["#606060","#FFFFFF"],
+  };
