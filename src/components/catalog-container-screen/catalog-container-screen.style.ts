@@ -9,7 +9,7 @@ export const Container1 = styled.div`
 export const Screen = styled.div`
     display: flex; 
     flex-direction: column; 
-    width: 370px;
+    width: 360px;
     height: 700px;
     max-width: 100%;
     max-height: 100%;

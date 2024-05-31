@@ -6,15 +6,14 @@ import {Info_item} from '../components/info-item';
 import {Info_description} from '../components/info-description';
 import {Catalog_container } from "../components/catalog-container";
 import {All_footer} from '../components/all-footer';
-import { URLs } from "../__data__/urls";
 import { getConfigValue } from "@ijl/cli";
 
 
 const Info = () => {
     const [catalogdata, setcatalogData] = useState([]);
     const [itemdata, setitemData] = useState([]);
-    console.log(URLs);
     const id = useParams().itemId;
+
     useEffect(() => {
         fetch(getConfigValue("my.api")+'/catalog-data')
             .then(response => response.json())

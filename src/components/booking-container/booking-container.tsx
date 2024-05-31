@@ -10,8 +10,6 @@ import { getConfigValue } from "@ijl/cli";
 export const Booking_container = () => {
 
     const id = [1, 2];
-
-    const findElementById = (id, el) => el.find(element => element.id == parseInt(id)) || null;
     const [itemdata, setData] = useState([]);
     
     useEffect(() => {
